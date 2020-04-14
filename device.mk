@@ -103,11 +103,12 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8937 \
-    Snap
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
+    android.hardware.camera.provider@2.4-service \
+    libmm-qcamera
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -457,3 +458,8 @@ PRODUCT_COPY_FILES += \
 
 # Inherit common proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/riva/riva-vendor.mk)
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
+
