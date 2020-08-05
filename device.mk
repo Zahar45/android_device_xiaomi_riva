@@ -252,6 +252,10 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
     $(DEVICE_PATH)/configs/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
 
+# Messaging
+PRODUCT_PACKAGES += \
+    Mms
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
