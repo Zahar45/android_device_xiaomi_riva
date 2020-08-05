@@ -142,6 +142,9 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/liblbs_core.so|libloc_shim.so \
     /vendor/lib64/libloc_api_v02.so|libloc_shim.so
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Tap2Wake
 TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 
